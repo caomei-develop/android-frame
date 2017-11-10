@@ -5,11 +5,11 @@ import com.squareup.okhttp.MediaType;
 
 public class APIConstant {
 
-	public static String BASE_URL = "http://api.cashtoutiao.com/frontend";
+	public static String BASE_URL = "";
 
 	static {
 		if (BuildConfig.FLAVOR != null && BuildConfig.FLAVOR.equals("dev")) {
-			BASE_URL = "http://192.168.0.247:9780/frontend";
+			BASE_URL = "";
 		}
 	}
 
