@@ -10,16 +10,16 @@ public class ApiEncrypter {
 
 	public static byte[] encrypt(byte[] rawBytes) {
 		byte[] aesBytes = CipherUtil.encrypt(key, rawBytes,
-				"AES/ECB/PKCS5Padding");
+				"");
 		return CipherUtil.mapping(encodeDic, aesBytes);
 	}
 
 	public static byte[] decrypt(byte[] encryptedBytes) {
 		byte[] aesBytes = CipherUtil.mapping(decodeDic, encryptedBytes);
-		return CipherUtil.decrypt(key, aesBytes, "AES/ECB/PKCS5Padding");
+		return CipherUtil.decrypt(key, aesBytes, "");
 	}
 
-	private static String password = "d2=r?bc-l55hH.87";
+	private static String password = "";
 
 	private static Key key = new SecretKeySpec(password.getBytes(), "AES");
 
