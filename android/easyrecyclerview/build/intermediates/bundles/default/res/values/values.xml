@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="refresh_default_color">#f15353</color>
+    <declare-styleable name="defaultDivider"><attr format="reference" name="hor"/><attr format="reference" name="ver"/></declare-styleable>
+    <declare-styleable name="superrecyclerview"><attr format="reference" name="layout_empty"/><attr format="reference" name="layout_progress"/><attr format="reference" name="layout_error"/><attr format="boolean" name="recyclerClipToPadding"/><attr format="dimension" name="recyclerPadding"/><attr format="dimension" name="recyclerPaddingTop"/><attr format="dimension" name="recyclerPaddingBottom"/><attr format="dimension" name="recyclerPaddingLeft"/><attr format="dimension" name="recyclerPaddingRight"/><attr name="scrollbarStyle">
+            <enum name="insideOverlay" value="0x0"/>
+            <enum name="insideInset" value="0x01000000"/>
+            <enum name="outsideOverlay" value="0x02000000"/>
+            <enum name="outsideInset" value="0x03000000"/>
+        </attr></declare-styleable>
+    <item name="slide_id_front_view" type="id"/>
+    <item name="slide_id_left_back_view" type="id"/>
+    <item name="slide_id_right_back_view" type="id"/>
+    <string name="app_name">EasyRecyclerView</string>
+</resources>
